@@ -1,3 +1,3 @@
-# DSA-Array
+Complete Array DSA with following Folder Structure.
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/amanvyas12/DSA-Array)
+1. Array Basics
