@@ -1,3 +1,6 @@
+/* TO RUN THE JS FILE MAKE CHANEGS IN SCRIPTS{} UNDER START IN PACKAGE.JSON FILE */
+// Optimal solution which is having a better Time and space complexity then brute force.
+
 let arr1 = [1, 2, 3];
 let arr2 = [2, 3, 3, 4, 5, 6, 6, 7, 8, 9, 10];
 let unionArray = [];

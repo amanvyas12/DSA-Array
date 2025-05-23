@@ -11,6 +11,7 @@
 /* 8 */ require('./Array/1. Array Basics/8. Rotate by D Place/rotateDPlace');
 /* 9 */ require('./Array/1. Array Basics/9. Move Zeros to the end of Array/moveZerosToEnd');
 /* 10 */ require('./Array/1. Array Basics/9. Move Zeros to the end of Array/moveZerosToEnd');
+/* 10 */ require('./Array/1. Array Basics/10. Intersection of Array/intersectionArray');
 
 
 
