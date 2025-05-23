@@ -10,6 +10,7 @@ function moveZerosToEnd(arr) {
             break;
         }
     }
+    if (j == -1 ) return arr;
     for (let i = j + 1; i < arr.length; i++) {
         if (arr[i] != 0) {
             [arr[i], arr[j]] = [arr[j], arr[i]];

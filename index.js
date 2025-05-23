@@ -10,7 +10,7 @@
 /* 7 */ require('./Array/1. Array Basics/7. Union of Two Sorted Arrays/unionOfTwoSortedArrays');
 /* 8 */ require('./Array/1. Array Basics/8. Rotate by D Place/rotateDPlace');
 /* 9 */ require('./Array/1. Array Basics/9. Move Zeros to the end of Array/moveZerosToEnd');
-
+/* 10 */ require('./Array/1. Array Basics/9. Move Zeros to the end of Array/moveZerosToEnd');
 
 
 

@@ -1,18 +1,48 @@
-/* TO RUN THE JS FILE MAKE CHANEGS IN SCRIPTS{} UNDER START IN PACKAGE.JSON FILE */
-// Optimal solution which is having a better Time and space complexity then brute force.
-
-let arr1 = [1, 2, 3, 4, 5, 5, 6, 7, 7];
+let arr1 = [1, 2, 3];
 let arr2 = [2, 3, 3, 4, 5, 6, 6, 7, 8, 9, 10];
 let unionArray = [];
+
 function unionOfSortedArray(arr1, arr2, unionArray) {
-  let s1 = arr1.length;
-  let s2 = arr2.length;
   let i = 0;
   let j = 0;
-  while (i < s1 && j < s2) {
+
+  while (i < arr1.length && j < arr2.length) {
     if (arr1[i] < arr2[j]) {
+      if (unionArray.length === 0 || unionArray[unionArray.length - 1] !== arr1[i]) {
+        unionArray.push(arr1[i]);
+      }
+      i++;
+    } else if (arr2[j] < arr1[i]) {
+      if (unionArray.length === 0 || unionArray[unionArray.length - 1] !== arr2[j]) {
+        unionArray.push(arr2[j]);
+      }
+      j++;
+    } else {
+      // arr1[i] === arr2[j]
+      if (unionArray.length === 0 || unionArray[unionArray.length - 1] !== arr1[i]) {
+        unionArray.push(arr1[i]);
+      }
+      i++;
+      j++;
     }
   }
+
+  while (i < arr1.length) {
+    if (unionArray.length === 0 || unionArray[unionArray.length - 1] !== arr1[i]) {
+      unionArray.push(arr1[i]);
+    }
+    i++;
+  }
+
+  while (j < arr2.length) {
+    if (unionArray.length === 0 || unionArray[unionArray.length - 1] !== arr2[j]) {
+      unionArray.push(arr2[j]);
+    }
+    j++;
+  }
+
   return unionArray;
 }
+
 unionOfSortedArray(arr1, arr2, unionArray);
+console.log(unionArray);
